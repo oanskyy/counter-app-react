@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'
+import "./App.css"
+import Counter from './Counter'
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* adding props to counter */}
+    <Counter initialCount={0}/>
+      <figure>
+        <blockquote>
+          “An investment in knowledge pays the best interest.”
+        </blockquote>
+        <figcaption>Benjamin Franklin</figcaption>
+      </figure>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
