@@ -17,7 +17,7 @@ function App() {
         <CounterHooks initialCount={3} />
         <button onClick={()=> setTheme(prevTheme => { 
           return prevTheme === 'red' ? 'blue' : 'red'
-        })}></button>
+        })}>Toggle theme</button>
         <figure>
           <blockquote>
             “An investment in knowledge pays the best interest.”
